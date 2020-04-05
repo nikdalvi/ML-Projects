@@ -60,7 +60,7 @@ minority_race = len_3
 print(minority_race)
 print("="*20)
 #Calculate working hours
-senior_citizens = census[census[:,0]>60]
+senior_citizens = census[age>60]
 print(senior_citizens)
 
 working_hours_sum = senior_citizens.sum(axis =0)[6]
@@ -77,6 +77,7 @@ low = census[census[:,1]<=10]
 
 avg_pay_high = high.mean(axis=0)[7]
 avg_pay_low = low.mean(axis =0)[7]
-
+print(avg_pay_high)
+print(avg_pay_low)
 
 
